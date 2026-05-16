@@ -1,0 +1,45 @@
+{
+    "class_names": [
+        "angry",
+        "disgust",
+        "fear",
+        "happy",
+        "neutral",
+        "sad",
+        "surprise"
+    ],
+    "stress_weights": {
+        "angry": 0.9,
+        "disgust": 0.7,
+        "fear": 0.95,
+        "happy": 0.05,
+        "neutral": 0.2,
+        "sad": 0.6,
+        "surprise": 0.4
+    },
+    "stress_levels": {
+        "low": [
+            0,
+            25
+        ],
+        "moderate": [
+            25,
+            50
+        ],
+        "high": [
+            50,
+            75
+        ],
+        "severe": [
+            75,
+            100
+        ]
+    },
+    "model_accuracy": 66.12,
+    "dataset": "FER-2013",
+    "input_shape": [
+        48,
+        48,
+        1
+    ]
+}
