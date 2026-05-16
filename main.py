@@ -39,7 +39,12 @@ model_path = hf_hub_download(
 
 print(f"✓ Model downloaded to : {model_path}")
 
-model = tf.keras.models.load_model(model_path)
+model = tf.keras.models.load_model(model_path, compile=False)
+model.compile(
+    optimizer = 'adam',
+    loss      = 'categorical_crossentropy',
+    metrics   = ['accuracy']
+)
 print("✓ Model loaded successfully")
 
 # Load config
