@@ -95,6 +95,20 @@ Accepts a face image and returns:
 - React
 - Live at [https://facewell-ai.lovable.app](https://facewell-ai.lovable.app)
 
+## Model
+
+The trained CNN model is publicly available on Hugging Face:
+
+**→ [https://huggingface.co/barth019/facewell_model](https://huggingface.co/barth019/facewell_model/tree/main)**
+
+You can download and use the model directly for research or integration into your own applications.
+
+## API
+
+**Base URL**
+
+https://facewell-ai.onrender.com
+
 ## Dataset
 
 - **Name** — FER-2013
