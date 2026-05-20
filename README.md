@@ -2,6 +2,13 @@
 
 A deep learning application that detects mental stress levels from facial expressions in real time.
 
+## 🔗 Live Demo
+
+**Try it here → [https://facewell-ai.lovable.app](https://facewell-ai.lovable.app)**
+
+Upload a face image or use your webcam and get your stress score instantly.
+
+
 ## Overview
 
 FaceWell AI uses a custom Convolutional Neural Network (CNN) trained on the FER-2013 dataset to classify facial expressions into 7 emotion categories and map them to a meaningful stress score between 0 and 100.
@@ -45,6 +52,30 @@ FaceWell AI uses a custom Convolutional Neural Network (CNN) trained on the FER-
 | 50 - 75 | High |
 | 75 - 100 | Severe |
 
+**GET /**
+Health check — confirms the API is running
+
+**POST /predict**
+Accepts a face image and returns:
+```json
+{
+  "predicted_emotion": "happy",
+  "confidence": 48.5,
+  "stress_score": 18.78,
+  "stress_level": "Low",
+  "emotion_breakdown": {
+    "angry": 4.02,
+    "disgust": 0.0,
+    "fear": 1.36,
+    "happy": 48.5,
+    "neutral": 40.43,
+    "sad": 5.4,
+    "surprise": 0.28
+  },
+  "message": "Detected happy with 48.5% confidence"
+}
+```
+
 ## Tech Stack
 
 **Model**
@@ -62,6 +93,7 @@ FaceWell AI uses a custom Convolutional Neural Network (CNN) trained on the FER-
 **Frontend**
 - Built with Lovable AI
 - React
+- Live at [https://facewell-ai.lovable.app](https://facewell-ai.lovable.app)
 
 ## Dataset
 
